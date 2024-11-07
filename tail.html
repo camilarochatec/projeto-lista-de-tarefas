@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas/to do list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        "46": '46px',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/tail.css">
+</head>
+
+<body>
+    <header class="bg-[#ED107A] px-4 py-3">
+        <h1>Lista de Tarefas</h1>
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar">
+        </div>
+        <span class="material-symbols-outlined">
+            search
+
+        </span>
+        <span class="material-symbols-outlined">
+            light_mode
+        </span>
+
+    </header>
+    <main class="px-[60px] pt-[50px]">
+        <h1 class="flex justify-between">Tarefas <button
+                class="h-46 bg-[#ED107A] hover:bg-pink-700 duration-200 text-white rounded-md flex items-center gap-3 px-5 hover:shadow-lg hover:shadow-pink-300"><span
+                    class="material-symbols-outlined"> add_circle</span>
+                </span>Nova tarefa</button></h1>
+
+        <ul class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <li class="shadow-md rounded-md p-4">
+                1
+
+                <span class="material-symbols-outlined">
+                    edit
+                </span>
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+
+            </li>
+            <li class="shadow-md rounded-md p-4">
+                2
+
+                <span class="material-symbols-outlined">
+                    edit
+                </span>
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+
+            </li>
+            <li class="shadow-md rounded-md p-4">
+                3
+
+                <span class="material-symbols-outlined">
+                    edit
+                </span>
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+
+            </li>
+            <li class="shadow-md rounded-md p-4">
+                4
+
+    
+
+                <span class="material-symbols-outlined">
+                    edit
+                </span>
+                <span class="material-symbols-outlined">
+                    delete
+                </span>
+
+            </li>
+        </ul>
+    </main>
+
+</body>
+
+</html>
